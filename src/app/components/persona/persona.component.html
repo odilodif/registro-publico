@@ -1,0 +1,13 @@
+<!--button (click)="saludar()" >Enviar</button-->
+<p>Persona:  One Way Binding</p>
+<input type="text" (keyup)="mandarTexto($event)">
+<p>Nombre: {{nombre}}</p>
+
+<button (click)="disminuir()" >-</button>
+<span>{{numero}}</span>
+<button (click)="aumentar()" >+</button>
+
+<p>Persona:  Two Way Binding</p>
+<input type="text" [(ngModel)]="apellido">
+            
+<p>Apellido: {{apellido}}</p>

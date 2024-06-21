@@ -1,0 +1,12 @@
+<h2>{{titulo}} App</h2>
+
+<input type="number" [(ngModel)]="num1" >
+<input type="number" [(ngModel)]="num2">
+
+<button  (click)="calcular('s')"> Sumar</button>
+<button (click)="calcular('r')">Restar</button>
+<button (click)="calcular('m')">Multiplicar</button>
+<button (click)="calcular('d')">Dividir</button>
+
+<h3>Resultado 1: {{total}}</h3>
+
