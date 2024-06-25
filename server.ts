@@ -20,12 +20,22 @@ export function app(): express.Express {
   // Example Express Rest API endpoints
   // server.get('/api/**', (req, res) => { });
   // Serve static files from /browser
+<<<<<<< HEAD
   server.get('*.*', express.static(browserDistFolder, {
     maxAge: '1y'
   }));
 
   // All regular routes use the Angular engine
   server.get('*', (req, res, next) => {
+=======
+  server.get('**', express.static(browserDistFolder, {
+    maxAge: '1y',
+    index: 'index.html',
+  }));
+
+  // All regular routes use the Angular engine
+  server.get('**', (req, res, next) => {
+>>>>>>> cd4fc20 (first commit2)
     const { protocol, originalUrl, baseUrl, headers } = req;
 
     commonEngine

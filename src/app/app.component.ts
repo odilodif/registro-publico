@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
+<<<<<<< HEAD
   x = 'demo se pasa de Padre a Hijo';
   total:number=0;
 
@@ -15,3 +16,7 @@ export class AppComponent {
   }
 }
   
+=======
+  title = 'registropublico';
+}
+>>>>>>> cd4fc20 (first commit2)
